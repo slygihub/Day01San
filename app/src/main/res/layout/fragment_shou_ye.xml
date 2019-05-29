@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ShouYeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.youth.banner.Banner
+            android:id="@+id/ban"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"></com.youth.banner.Banner>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="15dp"
+            app:cardUseCompatPadding="true">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/im1"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/icon_main_hotel" />
+
+                <ImageView
+                    android:id="@+id/im2"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/im1"
+                    android:src="@mipmap/icon_main_airticket" />
+
+                <ImageView
+                    android:id="@+id/im3"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/im2"
+                    android:src="@mipmap/icon_main_other_product" />
+
+                <ImageView
+                    android:id="@+id/im4"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/im3"
+                    android:src="@mipmap/icon_main_ticket" />
+
+                <ImageView
+                    android:id="@+id/im5"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/im1"
+                    android:src="@mipmap/icon_main_half_free" />
+
+                <ImageView
+                    android:id="@+id/im6"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/im1"
+                    android:layout_toRightOf="@id/im5"
+                    android:src="@mipmap/icon_main_destination_travel" />
+
+                <ImageView
+                    android:id="@+id/im7"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/im1"
+                    android:layout_toRightOf="@id/im6"
+                    android:src="@mipmap/icon_main_visa" />
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/im1"
+                    android:layout_toRightOf="@id/im7"
+                    android:src="@mipmap/icon_main_free_travel" />
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rec1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rec2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+</ScrollView>
